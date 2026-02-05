@@ -1,0 +1,16 @@
+.event-card {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+    transition: all 0.35s ease;
+}
+.event-card.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+.glass {
+    background: green;
+    backdrop-filter: blur(12px);
+}
+.dark .glass {
+    background: white;
+}

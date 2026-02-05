@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Event Scheduler</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 transition-colors duration-500">
+
+<!-- Header -->
+<div class="flex justify-between px-6 mt-6">
+<h1 class="text-3xl font-bold text-gray-900 dark:text-white">Dynamic Event Scheduler</h1>
+
+    <!-- Toggle Button -->
+</div>
+
+<!-- Filters -->
+<div class="flex flex-wrap justify-center gap-3 mt-6 mb-4">
+    <button class="filter-btn btn" data-category="All"><b>All</b></button>
+    <button class="filter-btn btn" data-category="Workshop"><b>Workshop</b></button>
+    <button class="filter-btn btn" data-category="Keynote"><b>Keynote</b></button>
+    <button class="filter-btn btn" data-category="Panel"><b>Panel</b></button>
+
+    <button class="time-btn btn-blue" data-time="Morning"><b>Morning</b></button>
+    <button class="time-btn btn-blue" data-time="Afternoon"><b>Afternoon</b></button>
+</div>
+
+<!-- Search -->
+<div class="flex justify-center mb-6">
+    <input id="searchInput" type ="text" placeholder="Search by Title or Speaker" class="w-80 px-4 py-2 border rounded-lg shadow bg-white dark:bg-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-700"/>
+</div>
+<!-- Event Container -->
+<div id="eventContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 pb-16"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
